@@ -5,7 +5,7 @@ Ansible inventory plugin to support tag in yaml files
 
 ### Example
 ```
-all: # keys must be unique, i.e. only one 'hosts' per group
+all: 
     hosts:
         test1:
             tags:
@@ -16,7 +16,7 @@ all: # keys must be unique, i.e. only one 'hosts' per group
               - TagA
               - TagB
 ```
-Output:  
+Output: `ansible-inventory -i example.yaml  --graph`
 ```
 @all:
   |--@TagA:

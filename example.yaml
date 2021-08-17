@@ -1,0 +1,10 @@
+all:
+    hosts:
+        test1:
+            tags:
+              - TagA
+        test2:
+            host_var: value
+            tags:
+              - TagA
+              - TagB
